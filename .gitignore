@@ -37,3 +37,7 @@ Debug
 .vs
 *.vcxproj.*
 *.vcxproj
+
+*
+!/**/
+!*.*
