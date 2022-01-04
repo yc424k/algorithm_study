@@ -7,6 +7,7 @@ int main()
 {
     int N;
     vector<int> arr;
+    cin >> N;
     for(int i = 0; i < N; i++){
         int n;
         cin >> n;
