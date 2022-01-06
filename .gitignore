@@ -57,5 +57,7 @@ Debug
 *.ilk
 *.exe.*
 *.obj.*
-
-
+*.plist
+#컴파일 설정 파일
+launch.json
+tasks.json
