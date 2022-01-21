@@ -1,34 +1,34 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
-    int N;
-    cin >> N;
-    int right = 1, left = 1;
-    bool check = true;
+int main() {
+	int rightNumber = 1;
+	int leftNumber = 1;
+	bool right = true;
+	int N;
+	cin >> N;
+	for (int i = 0; i < N-1; i++) {
 
-    for (int i = 1; i < N; i++)
-    {
-        if (right == 1 && check)
-        {
-            right += left;
-            left = 1;
-            check = false;
-        }
-        else if (left == 1 && check)
-        {
-            left += right;
-            right = 1;
-            check = false;
-        }
-        else
-        {
-            right--;
-            left++;
-            check = true;
-        }
-    }
-
-    cout << left << "/" << right << endl;
+		if (right) {
+			if (leftNumber == 1) {
+				right = false;
+				rightNumber++;
+			}
+			else {
+				rightNumber++;
+				leftNumber--;
+			}
+		}
+		else {
+			if (rightNumber == 1) {
+				right = true;
+				leftNumber++;
+			}
+			else {
+				rightNumber--;
+				leftNumber++;
+			}
+		}
+	}
+	cout << leftNumber << '/' << rightNumber << endl;
 }
