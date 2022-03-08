@@ -1,0 +1,1 @@
+print(str(chr(int(input())+44031)))
