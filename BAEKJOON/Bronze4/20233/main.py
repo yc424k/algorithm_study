@@ -1,0 +1,6 @@
+a = int(input())
+x = int(input())
+b = int(input())
+y = int(input())
+T = int(input())
+print(10+(T*60-30)*1)
