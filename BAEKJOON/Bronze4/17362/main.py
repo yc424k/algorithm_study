@@ -1,18 +1,14 @@
 finger = int(input())
-if finger <= 5:
-    print(finger)
+
+ans = finger % 8
+
+if ans == 1:
+    print(1)
+elif ans == 2 or ans == 0:
+    print(2)
+elif ans == 3 or ans == 7:
+    print(3)
+elif ans == 4 or ans == 6:
+    print(4)
 else:
-    if finger%8 == 1:
-        print(1)
-    elif finger // 4 % 2 == 0:
-        print(2)
-    elif(finger % 4 == 3):
-        print(3)
-    elif finger % 8 == 5:
-        print(5)
-    else:
-        print(4)
-    # elif finger // 4 % 2 == 1:
-    #     print(4)
-    # else:
-    #     print(5)
+    print(5)

@@ -32,7 +32,7 @@ else:
 
     parity = '0b'+parity_bit_str
     error = int(parity, 2)-1
-
+    # print("error", error)
     if haming[error] == 0:
         haming[error] = 1
     else:
