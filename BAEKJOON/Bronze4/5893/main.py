@@ -1,2 +1,4 @@
 num = input()
-print(bin(int(input()*17,2))[2:])
+num = int("0b"+num,2) * 17
+# print(num)
+print(bin(num)[2:])
