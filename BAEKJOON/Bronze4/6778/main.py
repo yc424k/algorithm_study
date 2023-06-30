@@ -7,3 +7,15 @@
 
 antenna = int(input())
 eye = int(input())
+check = 0
+if antenna >= 3 and eye <= 4:
+    print('TroyMartian')
+    check = 1
+if antenna <= 6 and eye >= 2:
+    print('VladSaturnian')
+    check = 1
+if antenna <= 2 and eye <= 3:
+    print('GraemeMercurian')
+    check = 1
+if check == 0:
+    print('')
